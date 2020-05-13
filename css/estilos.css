@@ -112,16 +112,6 @@ a:hover{
 }
 }
 
-/*
-section {
-  text-align: center;
-}
-
-figure{
-  display: inline-block;	
-}
-*/
-
 .primeiro{
   font-family: Arial;
   font-weight: bold;
@@ -131,7 +121,6 @@ figure{
 .portfolio .grid{
   display: grid;
   gap: 2em; 
-  overflow: hidden;
 }
 
 @media(min-width: 560px){
