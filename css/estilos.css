@@ -1,0 +1,155 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/**/
+body{
+  
+  background-image: url("../img/fundo.jpg");
+  background-size: auto 100vh;
+  font-family: 'Source Code Pro', monospace;
+  height: 70vh;
+}
+
+/* Se a tela tiver pelo menos 400 px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+  font-size:14px;
+}
+}
+
+header{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu li{
+  list-style: none;
+}
+
+.menu a {
+  
+  display: block;
+  padding: 10px 20px;
+  
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+a{
+  color: teal;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: whitesmoke;
+}
+
+.site-title{
+  font-family: 'Gloria Hallelujah', cursive;
+	
+}
+
+.site-subtitle{
+  font-style: italic; 
+  font-family: 'Press Start 2P', cursive; 
+  line-height: 1.8em;
+}
+
+.portfolio {
+  padding: 2em;
+}
+
+.portfolio h2 {
+  font-family: 'Press Start 2P', cursive;
+  margin-botton: 1.5em;
+  font-size: 2em; 	
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  object-position: left botton;
+  border-radius: 50%;
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+}
+
+.img-portfolio:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+@media (min-width: 1200px;){
+  .img-portifolio{
+  height: 180px;
+  width: 240px;
+}
+}
+
+/*
+section {
+  text-align: center;
+}
+
+figure{
+  display: inline-block;	
+}
+*/
+
+.primeiro{
+  font-family: Arial;
+  font-weight: bold;
+
+}
+
+.portfolio .grid{
+  display: grid;
+  gap: 2em; 
+  overflow: hidden;
+}
+
+@media(min-width: 560px){
+  .portfolio .grid{
+   grid-template-columns: 240px 240px;  
+}
+}
+
+@media(min-width: 880px){
+  .portfolio .grid{
+   grid-template-columns: repeat(3, 240px);
+   align-content: center;
+   justify-content: center; 
+   height: calc(100vh - 4em -48px - 1.5em);
+}
+}
+
+.portfolio figure{
+  text-align: center;
+}
+
